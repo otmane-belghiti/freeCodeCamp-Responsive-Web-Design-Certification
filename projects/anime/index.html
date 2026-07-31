@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portofolio-otmane bel</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a id="btn1" onclick="openhtml()" class="style" >Naruto</a> </li>
+            <li ><a id="btn2" onclick="opencss()" class="">hunter x hunter</a> </li>
+            <li><a id="btn3" onclick="openjs()" class="">black clover</a> </li>
+            <li><a id="btn4" onclick="open4()" class="">one piece</a> </li>
+        </ul>
+    </nav>
+    <div id="content1"  class="hero show">
+        <div class="left">
+            <h2>Naruto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+        </div>
+        <div class="right">
+            <img class="images" id ="img1" src="images/naruto/pngegg.png" alt="">
+        </div>
+    </div>
+    <div id="content2" class="hero">
+        <div class="left">
+            <h2>hunter x hunter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+        </div>
+        <div class="right">
+            <img class="images" id ="img2" src="images/gon-freecss-killua-zoldyck-leorio-kurapika-hisoka-anime-735ef06c5bf251c346c242c7ae784ed4.png" alt="">
+        </div>
+    </div>
+    <div id="content3" class="hero">
+        <div class="left">
+            <h2>black clover</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+        </div>
+        <div class="right">
+            <img class="images" id ="img3" src="images/black-clover-playstation-4-video-game-character-magic-clover-49c85e856ae049d040e2ef70d0f31fff.png" alt="">
+        </div>
+    </div>
+    <div id="content4" class="hero">
+        <div class="left">
+            <h2>one piece</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam commodi necessitatibus non maiores quis dolorum est eum rem hic dolorem.</p>
+        </div>
+        <div class="right">
+            <img class="images" id ="img4" src="images/pngegg (3).png" alt="">
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- type.js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script>
+        var type = new Typed('.typing-text',{
+            strings : [ 'NINJA','HOKAGE','NINJA', 'the wise hermit', 'ninja war hero' ],
+            typeSpeed: 120,
+            loop:true
+        });
+    
+        ScrollReveal({
+            reset: true,
+            distance:'50px',
+            duration:1500,
+            delay:100
+        });
+        ScrollReveal().reveal('.images', { delay: 200, origin:'right' });
+        ScrollReveal().reveal('.skilss', { delay: 300, origin:'bottom'  });
+        ScrollReveal().reveal('.container-imgs', { delay: 300, origin:'bottom'  });
+        ScrollReveal().reveal('.ico', { delay: 300, origin:'right'  });
+
+    </script>
+    <script src="js.js"></script>
+</body>
+</html>
