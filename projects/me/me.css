@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0a1538;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.content{
+    background-color: black;
+    padding: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.content h1{
+    z-index: 3;
+    font-size: 4rem;
+    background: linear-gradient(#00ccff , #d400d4);
+    background-clip: border-box;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+}
+.content::before{
+    content: '';
+    width: 200px;
+    height: 920px;
+    background: linear-gradient(#00ccff ,#d400d4);
+    animation: animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+    position: absolute;
+}
+.content::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-color: #0a1538;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+p{
+    font-size: 1.5rem;
+    position: relative;
+    background: linear-gradient(#d1f6ff , #1a3a75);
+    background-clip: border-box;
+    -webkit-background-clip: text ;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Popup img</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>our <span>Project</span></h1>
+        <div class="content">
+            <div class="img"><img onclick="phones(this.src);" src="images/img-1.jpg" alt=""></div>
+            <div class="img"><img onclick="phones(this.src);" src="images/img-2.jpg" alt=""></div>
+            <div class="img"><img onclick="phones(this.src);" src="images/img-3.jpg" alt=""></div>
+            <div class="img"><img onclick="phones(this.src);" src="images/img-4.jpg" alt=""></div>
+            <div class="img"><img onclick="phones(this.src);" src="images/img-5.jpg" alt=""></div>
+            <div class="img"><img onclick="phones(this.src);" src="images/img-6.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <span>&times;</span>
+        <img src="images/img-1.jpg" alt="">
+    </div>
+
+
+    <script>
+        let img = document.querySelector(".container img")
+        let pop = document.querySelector(".pop-up")
+        let logo = document.querySelector(".pop-up span")
+        let image = document.querySelector(".pop-up img")
+        
+        function phones(phone){
+                image.src= phone
+                pop.style.cssText="display:block"
+            }
+        logo.addEventListener("click",()=>{
+            pop.style.cssText="display:none"
+        })
+    </script>
+</body>
+</html>
